@@ -16,108 +16,50 @@ BPay/
 ├── BillPayApp/
 └── BPaySmartPOS/
 
-3. Backend Installation
-Go to:
-
-cd BillPayBackend
-Initialize Node if required:
+3. Backend Installation:
 npm init -y
 
-Install:
 npm install express cors
 
-Start backend:
 node server.js
 
-4. BPay Shop Website
-Go to the shop project:
-cd BillPayShop
-
-Install dependencies:
+4. BPay Shop Website:
 npm install
 
-Required packages include:
 npm install react-router-dom
-
-If QR generation is still used on the shop side:
 npm install qrcode.react
 
-Run the shop:
 npm run dev
 
-5. BPay Customer App
-Go to:
-cd BillPayApp
-
-Install normal dependencies:
+5. BPay Customer App:
 npm install
 
-Install React Navigation:
 npm install @react-navigation/native
-
-Then:
 npx expo install react-native-screens react-native-safe-area-context
-
-Install native stack:
 npm install @react-navigation/native-stack
-
-Install AsyncStorage:
 npx expo install @react-native-async-storage/async-storage
-
-Install QR scanning/camera:
 npx expo install expo-camera
-
-Install image picker for QR image uploads:
 npx expo install expo-image-picker
 
-Start:
 npx expo start -c
 
-6. BPay Smart POS
-Go to:
-cd BPaySmartPOS
-
-Install dependencies:
+6. BPay Smart POS:
 npm install
 
-QR generator:
 npm install react-native-qrcode-svg
-
-SVG support:
 npx expo install react-native-svg
-
-Speech confirmation:
 npx expo install expo-speech
-
-If navigation is used:
 npm install @react-navigation/native
 npm install @react-navigation/native-stack
 npx expo install react-native-screens react-native-safe-area-context
 
-Start:
 npx expo start -c
 
-8. Start Order
-Run the system in this order:
+7. BPay Expense Manager:
+npm install 
 
-1. Backend
-2. Shop Website
-3. Smart POS
-4. Customer App
+npx expo install @react-native-async-storage/async-storage
+npx expo install expo-notifications
+npx expo install react-dom react-native-web @expo/metro-runtime
 
-Backend:
-
-cd BillPayBackend
-node server.js
-
-Shop:
-cd BillPayShop
-npm run dev
-
-Smart POS:
-cd BPaySmartPOS
-npx expo start -c
-
-Customer App:
-cd BillPayApp
 npx expo start -c
