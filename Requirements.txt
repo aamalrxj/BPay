@@ -1,12 +1,8 @@
 BPay Project – Installation Requirements
 
 1. Required Software
-Install these first:
 Node.js
 npm
-Git
-VS Code
-Expo Go app on phone ( Currently Vendaa, QR image upload aakiya madhi Snipping tool vech snip aaki )
 
 2. Project Folders
 BPay/
